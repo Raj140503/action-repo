@@ -1,0 +1,28 @@
+{
+  "project": {
+    "name": "GitHub Webhook Test Repository",
+    "version": "1.0.0",
+    "author": "Raj Patil"
+  },
+  "webhook": {
+    "enabled": true,
+    "events": [
+      "push",
+      "pull_request",
+      "merge"
+    ],
+    "target": "webhook-dashboard"
+  },
+  "testing": {
+    "push_events": true,
+    "pull_request_events": true,
+    "merge_events": true,
+    "auto_test": false
+  },
+  "branches": {
+    "main": "production",
+    "staging": "testing",
+    "development": "dev"
+  },
+  "last_updated": "2025-01-04"
+}
